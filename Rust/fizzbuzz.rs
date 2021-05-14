@@ -1,13 +1,13 @@
 fn main() {
     for i in 1..101 {
-        let mut output: String = "".into();
+        let mut output = String::from("");
 
         if i % 3 == 0 {
-            output = format!("{}{}", output, "Fizz");
+            output.push_str("Fizz");
         }
 
         if i % 5 == 0 {
-            output = format!("{}{}", output, "Buzz");
+            output.push_str("Buzz");
         }
 
         if output == "" {
